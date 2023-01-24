@@ -1,0 +1,65 @@
+.burbuja{
+  background-color: #D99A6C;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+  width: 10vw;
+  height: 10vw;
+  left: 5%;
+  animation-duration: 2.5s;
+}
+
+.burbuja:nth-child(2){
+  width: 6vw;
+  height: 6vw;
+  left: 20%;
+}
+
+.burbuja:nth-child(3){
+  left: 35%;
+  animation-duration: 3.5s;
+}
+
+.burbuja:nth-child(4){
+  width: 9vw;
+  height: 9vw;
+  left: 50%;
+  animation-duration: 4s;
+}
+
+.burbuja:nth-child(5){
+  width: 5vw;
+  height: 5vw;
+  left: 65%;
+  animation-duration: 3.2s;
+}
+
+.burbuja:nth-child(6){
+  width: 10vw;
+  height: 10vw;
+  left: 80%;
+  animation-duration: 4.5s;
+}
+
+@keyframes burbujas {
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0.3;
+    transform: translateX(8vw);
+  }
+  
+  100%{
+    bottom: 100vh;
+    opacity: 0;
+  } 
+}

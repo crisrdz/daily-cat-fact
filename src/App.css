@@ -1,0 +1,47 @@
+:root{
+  --footer-height: 6rem;
+  --btn-hover-color: rgb(249, 206, 150);
+}
+
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  text-shadow: 0 0 1px #6F4E37;
+
+  white-space: nowrap;
+  text-align: center;
+  animation: aparecer 3s;
+  margin: 0;
+  padding: 1rem 0 0;
+}
+
+@keyframes aparecer {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+main{
+  min-height: calc(100vh - var(--footer-height) - 1rem);
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  h1{
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1{
+    font-size: 4.5rem;
+  }
+
+  main{
+    min-height: calc(100vh - var(--footer-height) - 3rem);
+  }
+}

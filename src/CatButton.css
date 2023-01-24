@@ -1,0 +1,43 @@
+.btn-cat{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  right: 2px;
+  border: 0;
+  background: 0;
+  transition: all 0.2s ease;
+  font-size: 1.3rem;
+  cursor: pointer;
+  
+}
+
+.btn-cat:hover{
+  filter: drop-shadow(0 0 2px var(--btn-hover-color)) 
+          drop-shadow(0 0 2px var(--btn-hover-color))
+          drop-shadow(0 0 2px var(--btn-hover-color))
+          drop-shadow(0 0 1px var(--border-color))
+          drop-shadow(0 0 1px var(--border-color));
+}
+
+@media (min-width: 425px) {
+  .btn-cat{
+    right: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-cat{
+    right: 5%;
+    font-size: 2rem;
+  }
+
+  .btn-cat:hover{
+    filter: drop-shadow(0 0 3px var(--btn-hover-color)) 
+            drop-shadow(0 0 3px var(--btn-hover-color))
+            drop-shadow(0 0 3px var(--btn-hover-color))
+            drop-shadow(0 0 1px var(--border-color))
+            drop-shadow(0 0 1px var(--border-color));
+  }
+}

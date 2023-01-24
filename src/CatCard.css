@@ -1,0 +1,260 @@
+:root{
+  --border-color: #6F4E37;
+  --background-card: radial-gradient(antiquewhite, rgb(249, 222, 187));
+}
+
+.card{
+  position: relative;
+  border: 2px var(--border-color) solid;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 0 10px 1px #A67B5B;
+  background: var(--background-card);
+  width: 300px;
+  max-width: 80%;
+  margin: 1rem auto;
+  
+  opacity: 0;
+  transition: all 2s;
+  animation: aparecer 3s .5s forwards;
+}
+
+.card-rotate{
+  transform: rotateX(180deg);
+}
+
+.card-flex{
+  min-height: calc(24rem + 2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s;
+}
+
+.card-hide{
+  opacity: 0;
+}
+
+.card-grid{
+  transform: rotateX(180deg);
+  display: grid;
+  grid-template-rows: auto auto;
+  opacity: 0;
+  animation: opacity-transform 1.5s forwards;
+  min-height: 20rem;
+  transition: min-height 2s;
+}
+
+@keyframes opacity-transform {
+  to { opacity: 1 };
+}
+
+.card-none{
+  display: none;
+}
+
+.card-one, .card-two{
+  padding: 1rem;
+}
+
+.card-one{
+  border-bottom: 1px var(--border-color) solid;
+  justify-content: center;
+  display: flex;
+}
+
+.card-one img{
+  max-width: 100%;
+  width: 10rem;
+  height: 10rem;
+  transition: all 2s;
+}
+
+.card-two{
+  border-top: 1px var(--border-color) solid;
+  min-height: 10rem;
+  font-style: italic;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.card-two p{
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .card{
+    margin-bottom: 3rem;
+  }
+
+  .card.card-horizontal{
+    width: 40rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-grid{
+    min-height: 29rem;
+  }
+
+  .card-horizontal .card-grid{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    min-height: 20rem;
+  }
+
+  .card-horizontal .card-flex{
+    min-height: 20rem;
+  }
+
+  .card-horizontal .card-one,.card-horizontal .card-two{
+    padding: 0;
+  }
+
+  .card-horizontal .card-one{
+    border-right: 1px var(--border-color) solid;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-horizontal .card-one img{
+    margin: 0 1rem;
+  }
+
+  .card-horizontal .card-two{
+    border-left: 1px var(--border-color) solid;
+    border-top: 0;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-horizontal .card-two p{
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card{
+    width: 25rem;
+  }
+
+  .card.card-horizontal{
+    width: 60rem;
+  }
+
+  .card-one img{
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .card-two{
+    min-height: 13rem;
+  }
+
+  .card-horizontal .card-one img{
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .card-horizontal .card-two p{
+    font-size: 1.4rem;
+  }
+}
+
+.card-btn{
+  width: max-content;
+  height: max-content;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #D99A6C;
+  border: var(--border-color) solid 1px;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 4px 1px var(--border-color);
+  transition: 0.4s ease;
+  white-space: pre-line;
+}
+
+.card-btn:hover{
+  background-color: #A67B5B;
+  cursor: pointer;
+}
+
+.cat{
+  position: absolute;
+  bottom: 45%;
+  z-index: -1;
+  width: 80px;
+}
+
+.paw{
+  display: flex;
+  position: absolute;
+  color: var(--border-color);
+  opacity: 0.45;
+  font-size: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .card-btn{
+    font-size: 1.4rem;
+  }
+
+  .cat{
+    width: 120px;
+  }
+
+  .paw{
+    font-size: 4rem;
+  }
+}
+
+.card .paw:nth-child(1){
+  top: 10px;
+  left: 10px;
+  transform: rotateZ(315deg);
+}
+
+.card .paw:nth-child(2){
+  top: 10px;
+  right: 10px;
+  transform: rotateZ(45deg);
+}
+
+.card .paw:nth-child(3){
+  bottom: 10px;
+  right: 10px;
+  transform: rotateZ(135deg);
+}
+
+.card .paw:nth-child(4){
+  bottom: 10px;
+  left: 10px;
+  transform: rotateZ(225deg);
+}
+
+.btn-giro{
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .btn-giro{
+    cursor: pointer;
+    display: inline;
+    background: var(--background-card);
+    border: #6F4E37 solid 2px;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    top: -2.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background 1s ease;
+  }
+  
+  .btn-giro:hover{
+    background: var(--btn-hover-color);
+  }
+}
