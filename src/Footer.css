@@ -62,7 +62,7 @@ footer .footer-info a{
 .footer-img{
   width: 30vw;
   position: absolute;
-  bottom: 2.6rem;
+  bottom: 4.8rem;
   z-index: -1;
   filter: drop-shadow(0 0 1px var(--border-color));
 }

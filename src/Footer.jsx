@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Credits from "./Credits";
 
 function Footer() {
   return (
@@ -18,6 +19,7 @@ function Footer() {
           </a>
         </div>
       </div>
+      <Credits />
     </footer>
   );
 }

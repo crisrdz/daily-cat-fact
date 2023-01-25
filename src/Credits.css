@@ -1,0 +1,36 @@
+.credits{
+  width: max-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 5px;
+}
+
+.credits h6{
+  font-size: 7px;
+  margin: 0;
+}
+
+.credits ul{
+  margin: 0 2px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.credits ul li{
+  width: max-content;
+}
+
+.credits a{
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .credits {
+    font-size: 8px;
+  }
+
+  .credits h6{
+    font-size: 9px;
+  }
+}

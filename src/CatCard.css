@@ -1,6 +1,7 @@
 :root{
   --border-color: #6F4E37;
   --background-card: radial-gradient(antiquewhite, rgb(249, 222, 187));
+  --font-size-a: 8px;
 }
 
 .card{
@@ -31,6 +32,16 @@
   transition: opacity 1s;
 }
 
+.card-flex a{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: var(--font-size-a);
+  color: var(--border-color);
+  margin-right: 1.2rem;
+  margin-bottom: 1px;
+}
+
 .card-hide{
   opacity: 0;
 }
@@ -59,8 +70,16 @@
 
 .card-one{
   border-bottom: 1px var(--border-color) solid;
-  justify-content: center;
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-one a{
+  margin-top: 5px;
+  font-size: var(--font-size-a);
+  color: var(--border-color);
 }
 
 .card-one img{
@@ -131,6 +150,10 @@
 
   .card-horizontal .card-two p{
     margin: 1rem;
+  }
+
+  :root{
+    --font-size-a: 10px;
   }
 }
 

@@ -9,6 +9,7 @@ function App() {
   const arrayAudios = ["cat_bell.mp3", "cat_meow.mp3", "cat_mewo.mp3", "cat_pur.mp3"];
   const music = new Audio("sounds/musicBox_greenSleeves.mp3");
   music.muted = true
+  music.volume = 0.9;
   music.loop = true;
 
   function reproducirMeow(){

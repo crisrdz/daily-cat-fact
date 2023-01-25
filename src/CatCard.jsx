@@ -79,6 +79,7 @@ function CatCard({reproducirMeow}) {
         <div className="card-grid" ref={cardBack}>
           <div className="card-one">
             <img src="img/black-cat.png" alt="" />
+            <a href="https://www.flaticon.com/free-stickers/black-cat" title="black cat stickers" target="_blank">Sticker created by Stickers - Flaticon</a>
           </div>
           <div className="card-two">
             <p>"{fact}"</p>
@@ -97,6 +98,7 @@ function CatCard({reproducirMeow}) {
       <button className="card-none" onClick={handleClickBtn} ref={cardBtn}><FaRetweet /></button>
       <div className="card-flex" ref={cardFront}>
         <img src="img/cat_color.png" alt="" className="cat" />
+        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons" target="_blank">Icon created by Freepik - Flaticon</a>
         <button className="card-btn" onClick={handleClick}> 
           <FaPaw /> Show fact of the day <FaPaw />
         </button>
@@ -104,6 +106,7 @@ function CatCard({reproducirMeow}) {
       <div className="card-none" ref={cardBack}>
         <div className="card-one">
           <img src="img/black-cat.png" alt="" />
+          <a href="https://www.flaticon.com/free-stickers/black-cat" title="black cat stickers" target="_blank">Sticker created by Stickers - Flaticon</a>
         </div>
         <div className="card-two">
           <p>"{fact}"</p>
