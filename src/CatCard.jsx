@@ -83,6 +83,7 @@ function CatCard({reproducirMeow}) {
           </div>
           <div className="card-two">
             <p>"{fact}"</p>
+            <p className="fact-from">Cat fact from <a href="https://github.com/alexwohlbruck/cat-facts">alexwohlbruck in Github</a></p>
           </div>
         </div>
       </div>
@@ -110,6 +111,7 @@ function CatCard({reproducirMeow}) {
         </div>
         <div className="card-two">
           <p>"{fact}"</p>
+          <p className="fact-from">Cat fact from <a href="https://github.com/alexwohlbruck/cat-facts">alexwohlbruck in Github</a></p>
         </div>
       </div>
     </div>

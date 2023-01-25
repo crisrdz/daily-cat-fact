@@ -97,7 +97,7 @@
   transition: all 2s;
 }
 
-.card-two p{
+.card-two p {
   margin: 0;
 }
 
@@ -148,7 +148,7 @@
     align-items: center;
   }
 
-  .card-horizontal .card-two p{
+  .card-horizontal .card-two p:first-of-type{
     margin: 1rem;
   }
 
@@ -180,7 +180,7 @@
     height: 13rem;
   }
 
-  .card-horizontal .card-two p{
+  .card-horizontal .card-two p:first-of-type{
     font-size: 1.4rem;
   }
 }
@@ -280,4 +280,11 @@
   .btn-giro:hover{
     background: var(--btn-hover-color);
   }
+}
+
+.fact-from{
+  position: absolute;
+  font-size: var(--font-size-a);
+  bottom: 2px;
+  right: 1.2rem;
 }
