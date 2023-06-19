@@ -1,7 +1,8 @@
 {
-  "name": "gatosproyecto",
-  "private": true,
-  "version": "0.0.0",
+  "name": "daily-cat-fact",
+  "version": "1.0.0",
+  "description": "A simple app to see a daily cat fact",
+  "author": "crisrdz",
   "type": "module",
   "scripts": {
     "dev": "vite",
